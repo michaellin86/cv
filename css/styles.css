@@ -1,7 +1,12 @@
 /***** TAG SELECTORS *****/
 
+html {
+  height: 100%;
+}
+
 body {
   color: #1b262c;
+  height: 100%;
   margin: 0px;
   text-align: center;
   font-family: "Merriweather", serif;
@@ -10,7 +15,7 @@ body {
 h1 {
   font-size: 5.625rem;
   margin: 50px auto 0 auto;
-  font-family: "Sacramento", cursive;
+  font-family: "Merriweather", serif;
   color: #0f4c75;
 }
 
@@ -57,26 +62,43 @@ p {
 
 .skill-img-left {
   float: left;
-  width: 25%;
+  width: 150px;
   margin-right: 30px;
 }
 
 .skill-img-right {
   float: right;
-  width: 25%;
-  margin-right: 30px;
+  width: 150px;
+  margin-left: 30px;
 }
 
 .skill-row {
   width: 50%;
-  margin: 100px auto;
+  margin: 150px auto;
   text-align: left;
 }
 
 .top-container {
-  background-color: #bbe1fa;
+  height: 100%;
   position: relative;
+  display: block;
   padding-top: 100px;
+}
+
+.top-container:after {
+  content: "";
+  background-image: url("../images/downtown.png");
+  opacity: 0.4;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .middle-container {
